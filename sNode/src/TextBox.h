@@ -1,6 +1,5 @@
 //
 //  TextBox.h
-//  10-Node
 //
 //  Created by Elliot Woods on 09/12/2011.
 //  Copyright 2011 Kimchi and Chips.
