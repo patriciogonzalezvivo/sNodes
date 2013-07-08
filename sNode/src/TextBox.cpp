@@ -82,10 +82,12 @@ void TextBox::draw() {
     ofPushStyle();
     ofNoFill();
     ofSetColor(255,100);
-    ofRectRounded(*this, 3);
+//    ofRectRounded(*this, 3);
+    ofRect(*this);
     ofFill();
     ofSetColor(100,100);
-    ofRectRounded(*this, 3);
+//    ofRectRounded(*this, 3);
+    ofRect(*this);
     ofPopStyle();
     
 	ofPushMatrix();
@@ -108,7 +110,9 @@ void TextBox::draw() {
     width = nameHeight+(text.size()+2)*8;
 	
     int cursorPos;
-	//draw cursor line
+    
+	//  draw cursor line
+    //
     if(drawCursor) {
         ofPushStyle();
         float timeFrac = 0.5 * sin(3.0f * ofGetElapsedTimef()) + 0.5;

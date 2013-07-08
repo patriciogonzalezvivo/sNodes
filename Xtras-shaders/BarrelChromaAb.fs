@@ -40,6 +40,7 @@ const float reci_num_iter_f = 1.0 / float(num_iter);
 
 void main(){	
 	vec2 st = gl_FragCoord.xy/resolution.xy;// * vec2(1,-1);
+	st.y = 1.0-st.y;
 	vec2 uv = (st*zoom);
 	
 	vec3 sumcol = vec3(0.0);

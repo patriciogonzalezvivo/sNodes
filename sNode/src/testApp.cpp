@@ -4,7 +4,7 @@
 void testApp::setup(){
     ofEnableAlphaBlending();
     ofSetVerticalSync(true);
-    ofSetDataPathRoot("data/");
+//    ofSetDataPathRoot("data/");
 
     ofSetWindowShape(640, 480);
     millisBetweenFileCheck = 2 * 1000;
@@ -252,8 +252,6 @@ void testApp::update(){
                 }
             } else if(uniforms[i]->type == UNIFORM_VEC2){
                 if (uniforms[i]->text.find('/') == 0){
-                    
-//                    cout << uniforms[i]->text << "---" << m.getAddress() << "---" << endl;
                     if (uniforms[i]->text == m.getAddress() ){
                         uniforms[i]->vec2Value.set(m.getArgAsFloat(0), m.getArgAsFloat(1));
                     }
@@ -345,6 +343,7 @@ void testApp::draw(){
     glTexCoord2f(width, height); glVertex3f(width, height, 0);
     glTexCoord2f(0,height);  glVertex3f(0,height, 0);
     glEnd();
+    
     shader.end();
     pingpong.dst->end();
 

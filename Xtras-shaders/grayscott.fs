@@ -6,6 +6,9 @@ uniform float diffV; // = 0.04;
 uniform float k; // = 0.047;
 uniform float f; // = 0.1;
 
+uniform float time;
+uniform float fade;
+
 float kernel[9];
 vec2 offset[9];
 
@@ -33,7 +36,8 @@ void main(void){
     offset[8] = vec2(  1.0, 1.0);
     
     vec2 texColor		= texture2DRect( backbuffer, st ).rb;
-    float srcTexColor   = texture2DRect( tex0, st ).r;
+    float srcTexColor   = texture2DRect( tex0, st ).r*abs(sin(time*0.01))*fade
+    ;
     
     vec2 lap            = vec2( 0.0, 0.0 );
     
