@@ -3,18 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		00c5f345976322b901ec92ad461cae12 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6d9a096150d5f1aae78e29f68de9b42c /* fft.cpp */; };
 		2d714e3c17be087ba00d3dc41f9b7280 /* fftOctaveAnalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4a1a0bff9c10106dff4e0849eeec1e7f /* fftOctaveAnalyzer.cpp */; };
-		3D5B8E6117505FBE00F558AC /* sNode-FFT.icns in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D5B8E6017505FB700F558AC /* sNode-FFT.icns */; };
-		3DF85156174FB115009B35CB /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF85149174FB115009B35CB /* Syphon.framework */; };
-		3DF85157174FB115009B35CB /* SyphonNameboundClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8514C174FB115009B35CB /* SyphonNameboundClient.m */; };
-		3DF85158174FB115009B35CB /* ofxSyphonClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3DF85151174FB115009B35CB /* ofxSyphonClient.mm */; };
-		3DF85159174FB115009B35CB /* ofxSyphonServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3DF85153174FB115009B35CB /* ofxSyphonServer.mm */; };
-		3DF8515D174FB130009B35CB /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DF85149174FB115009B35CB /* Syphon.framework */; };
+		3D80196417D8E4CD00D8C1E4 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D80195717D8E4CD00D8C1E4 /* Syphon.framework */; };
+		3D80196517D8E4CD00D8C1E4 /* SyphonNameboundClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D80195A17D8E4CD00D8C1E4 /* SyphonNameboundClient.m */; };
+		3D80196617D8E4CD00D8C1E4 /* ofxSyphonClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D80195F17D8E4CD00D8C1E4 /* ofxSyphonClient.mm */; };
+		3D80196717D8E4CD00D8C1E4 /* ofxSyphonServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D80196117D8E4CD00D8C1E4 /* ofxSyphonServer.mm */; };
+		3D80196B17D8E4E700D8C1E4 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D80195717D8E4CD00D8C1E4 /* Syphon.framework */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -27,7 +26,7 @@
 		E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
 		E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
-		E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
 		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
 		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
@@ -61,9 +60,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3D80196B17D8E4E700D8C1E4 /* Syphon.framework in CopyFiles */,
 				BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */,
-				3DF8515D174FB130009B35CB /* Syphon.framework in CopyFiles */,
-				3D5B8E6117505FBE00F558AC /* sNode-FFT.icns in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,16 +69,15 @@
 
 /* Begin PBXFileReference section */
 		19586924002fc89ba337799906f48562 /* fftOctaveAnalyzer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fftOctaveAnalyzer.h; path = src/fftOctaveAnalyzer.h; sourceTree = SOURCE_ROOT; };
-		3D5B8E6017505FB700F558AC /* sNode-FFT.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "sNode-FFT.icns"; sourceTree = "<group>"; };
-		3DF85149174FB115009B35CB /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Syphon.framework; sourceTree = "<group>"; };
-		3DF8514B174FB115009B35CB /* SyphonNameboundClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyphonNameboundClient.h; sourceTree = "<group>"; };
-		3DF8514C174FB115009B35CB /* SyphonNameboundClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyphonNameboundClient.m; sourceTree = "<group>"; };
-		3DF8514D174FB115009B35CB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		3DF8514F174FB115009B35CB /* ofxSyphon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphon.h; sourceTree = "<group>"; };
-		3DF85150174FB115009B35CB /* ofxSyphonClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphonClient.h; sourceTree = "<group>"; };
-		3DF85151174FB115009B35CB /* ofxSyphonClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxSyphonClient.mm; sourceTree = "<group>"; };
-		3DF85152174FB115009B35CB /* ofxSyphonServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphonServer.h; sourceTree = "<group>"; };
-		3DF85153174FB115009B35CB /* ofxSyphonServer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxSyphonServer.mm; sourceTree = "<group>"; };
+		3D80195717D8E4CD00D8C1E4 /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Syphon.framework; sourceTree = "<group>"; };
+		3D80195917D8E4CD00D8C1E4 /* SyphonNameboundClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyphonNameboundClient.h; sourceTree = "<group>"; };
+		3D80195A17D8E4CD00D8C1E4 /* SyphonNameboundClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyphonNameboundClient.m; sourceTree = "<group>"; };
+		3D80195B17D8E4CD00D8C1E4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		3D80195D17D8E4CD00D8C1E4 /* ofxSyphon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphon.h; sourceTree = "<group>"; };
+		3D80195E17D8E4CD00D8C1E4 /* ofxSyphonClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphonClient.h; sourceTree = "<group>"; };
+		3D80195F17D8E4CD00D8C1E4 /* ofxSyphonClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxSyphonClient.mm; sourceTree = "<group>"; };
+		3D80196017D8E4CD00D8C1E4 /* ofxSyphonServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSyphonServer.h; sourceTree = "<group>"; };
+		3D80196117D8E4CD00D8C1E4 /* ofxSyphonServer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxSyphonServer.mm; sourceTree = "<group>"; };
 		4a1a0bff9c10106dff4e0849eeec1e7f /* fftOctaveAnalyzer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = fftOctaveAnalyzer.cpp; path = src/fftOctaveAnalyzer.cpp; sourceTree = SOURCE_ROOT; };
 		6d9a096150d5f1aae78e29f68de9b42c /* fft.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = fft.cpp; path = src/fft.cpp; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
@@ -96,8 +93,8 @@
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		E4B69B5B0A3A1756003C02F2 /* sNode-FFTDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sNode-FFTDebug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = testApp.cpp; path = src/testApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1F0A3A1BDC003C02F2 /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -132,74 +129,74 @@
 				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
 				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
 				E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */,
-				3DF85156174FB115009B35CB /* Syphon.framework in Frameworks */,
+				3D80196417D8E4CD00D8C1E4 /* Syphon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3DF85131174FB115009B35CB /* ofxSyphon */ = {
+		3D80193F17D8E4CD00D8C1E4 /* ofxSyphon */ = {
 			isa = PBXGroup;
 			children = (
-				3DF85145174FB115009B35CB /* libs */,
-				3DF8514D174FB115009B35CB /* README.md */,
-				3DF8514E174FB115009B35CB /* src */,
+				3D80195317D8E4CD00D8C1E4 /* libs */,
+				3D80195B17D8E4CD00D8C1E4 /* README.md */,
+				3D80195C17D8E4CD00D8C1E4 /* src */,
 			);
 			name = ofxSyphon;
 			path = ../../../addons/ofxSyphon;
 			sourceTree = "<group>";
 		};
-		3DF85145174FB115009B35CB /* libs */ = {
+		3D80195317D8E4CD00D8C1E4 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				3DF85146174FB115009B35CB /* Syphon */,
+				3D80195417D8E4CD00D8C1E4 /* Syphon */,
 			);
 			path = libs;
 			sourceTree = "<group>";
 		};
-		3DF85146174FB115009B35CB /* Syphon */ = {
+		3D80195417D8E4CD00D8C1E4 /* Syphon */ = {
 			isa = PBXGroup;
 			children = (
-				3DF85147174FB115009B35CB /* lib */,
-				3DF8514A174FB115009B35CB /* src */,
+				3D80195517D8E4CD00D8C1E4 /* lib */,
+				3D80195817D8E4CD00D8C1E4 /* src */,
 			);
 			path = Syphon;
 			sourceTree = "<group>";
 		};
-		3DF85147174FB115009B35CB /* lib */ = {
+		3D80195517D8E4CD00D8C1E4 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				3DF85148174FB115009B35CB /* osx */,
+				3D80195617D8E4CD00D8C1E4 /* osx */,
 			);
 			path = lib;
 			sourceTree = "<group>";
 		};
-		3DF85148174FB115009B35CB /* osx */ = {
+		3D80195617D8E4CD00D8C1E4 /* osx */ = {
 			isa = PBXGroup;
 			children = (
-				3DF85149174FB115009B35CB /* Syphon.framework */,
+				3D80195717D8E4CD00D8C1E4 /* Syphon.framework */,
 			);
 			path = osx;
 			sourceTree = "<group>";
 		};
-		3DF8514A174FB115009B35CB /* src */ = {
+		3D80195817D8E4CD00D8C1E4 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				3DF8514B174FB115009B35CB /* SyphonNameboundClient.h */,
-				3DF8514C174FB115009B35CB /* SyphonNameboundClient.m */,
+				3D80195917D8E4CD00D8C1E4 /* SyphonNameboundClient.h */,
+				3D80195A17D8E4CD00D8C1E4 /* SyphonNameboundClient.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
 		};
-		3DF8514E174FB115009B35CB /* src */ = {
+		3D80195C17D8E4CD00D8C1E4 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				3DF8514F174FB115009B35CB /* ofxSyphon.h */,
-				3DF85150174FB115009B35CB /* ofxSyphonClient.h */,
-				3DF85151174FB115009B35CB /* ofxSyphonClient.mm */,
-				3DF85152174FB115009B35CB /* ofxSyphonServer.h */,
-				3DF85153174FB115009B35CB /* ofxSyphonServer.mm */,
+				3D80195D17D8E4CD00D8C1E4 /* ofxSyphon.h */,
+				3D80195E17D8E4CD00D8C1E4 /* ofxSyphonClient.h */,
+				3D80195F17D8E4CD00D8C1E4 /* ofxSyphonClient.mm */,
+				3D80196017D8E4CD00D8C1E4 /* ofxSyphonServer.h */,
+				3D80196117D8E4CD00D8C1E4 /* ofxSyphonServer.mm */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -207,7 +204,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				3DF85131174FB115009B35CB /* ofxSyphon */,
+				3D80193F17D8E4CD00D8C1E4 /* ofxSyphon */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -262,7 +259,6 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
-				3D5B8E6017505FB700F558AC /* sNode-FFT.icns */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
@@ -277,12 +273,12 @@
 			isa = PBXGroup;
 			children = (
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
-				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				6d9a096150d5f1aae78e29f68de9b42c /* fft.cpp */,
 				b90d9a27d954061397a0491ba40c3df6 /* fft.h */,
-				4a1a0bff9c10106dff4e0849eeec1e7f /* fftOctaveAnalyzer.cpp */,
 				19586924002fc89ba337799906f48562 /* fftOctaveAnalyzer.h */,
+				4a1a0bff9c10106dff4e0849eeec1e7f /* fftOctaveAnalyzer.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -323,8 +319,11 @@
 /* Begin PBXProject section */
 		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "sNode-FFT" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -371,7 +370,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";";
+			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\ncp -f \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -381,12 +380,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
-				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				00c5f345976322b901ec92ad461cae12 /* fft.cpp in Sources */,
 				2d714e3c17be087ba00d3dc41f9b7280 /* fftOctaveAnalyzer.cpp in Sources */,
-				3DF85157174FB115009B35CB /* SyphonNameboundClient.m in Sources */,
-				3DF85158174FB115009B35CB /* ofxSyphonClient.mm in Sources */,
-				3DF85159174FB115009B35CB /* ofxSyphonServer.mm in Sources */,
+				3D80196517D8E4CD00D8C1E4 /* SyphonNameboundClient.m in Sources */,
+				3D80196617D8E4CD00D8C1E4 /* ofxSyphonClient.mm in Sources */,
+				3D80196717D8E4CD00D8C1E4 /* ofxSyphonServer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +424,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
@@ -459,6 +459,7 @@
 					"$(OF_CORE_HEADERS)",
 					src,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
@@ -471,20 +472,19 @@
 		E4B69B600A3A1757003C02F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"\"$(SRCROOT)/../../../addons/ofxSyphon/libs/Syphon/lib/osx\"",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../addons/ofxSyphon/libs/Syphon/lib/osx\"";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
@@ -551,7 +551,6 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
 			};
@@ -560,19 +559,18 @@
 		E4B69B610A3A1757003C02F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"\"$(SRCROOT)/../../../addons/ofxSyphon/libs/Syphon/lib/osx\"",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../addons/ofxSyphon/libs/Syphon/lib/osx\"";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
@@ -639,7 +637,6 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
